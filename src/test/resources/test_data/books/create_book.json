@@ -1,0 +1,14 @@
+{
+  "header": {
+    "appId": "demo",
+    "requestDt": "20210510205441"
+  },
+  "body": {
+    "name": "Book 6",
+    "description": "Book desc 6",
+    "authors": [{
+      "id": 1},
+      {"id": 2}
+    ]
+  }
+}

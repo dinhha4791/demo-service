@@ -1,0 +1,17 @@
+{
+  "header": {
+    "appId": "demo service",
+    "requestDt": "20210512205441"
+  },
+  "body": {
+    "name": "Author 6",
+    "email": "Email6@gmail.com",
+    "phoneNumber": 6666666666,
+    "address": "Author address 6",
+    "information": "Author Information 6",
+    "bookIds": [
+      {"id": 2},
+      {"id": 3}
+    ]
+  }
+}
