@@ -1,3 +1,5 @@
+
+
 # DEMO SERVICE
 
 ## Table of contents
@@ -21,7 +23,7 @@
 
 ## General info
 This project is a simple demo for interviewing at SOFTBRAIN.
-	
+    
 ## Software Architecture
 
 ### Design Pattern
@@ -36,9 +38,9 @@ This project is a simple demo for interviewing at SOFTBRAIN.
  
 ### Diagrams
   #### Process Flow Diagram
-   ![Alt text](blob/process_diagram.png?raw=true "Process diagram")
+   <img src="blob/process_diagram.png" alt="Process diagram" width="650" />
   #### Entity Diagram
-   ![Alt text](blob/entity_diagram.png?raw=true "Entity diagram")
+   <img src="blob/entity_diagram.png" alt="Entity diagram" width="650" />
 
 ### SourceCode Structure
 ``` 
@@ -85,23 +87,27 @@ This project is a simple demo for interviewing at SOFTBRAIN.
   > mvn spring-boot:run
 ### General Configuration
   #### Turn off SSL verification
-  * Turn off SSL for postman
-  ![Alt text](blob/postman_turnoff_ssl.png?raw=true "Cofig SSL postman")
+    * Turn off SSL for postman
+    <img src="blob/postman_turnoff_ssl.png?raw=true" alt="Cofig SSL postman" width="650"/>
   #### Setting basic authentication
-  * Setting basic username/password for postman
-  ![Alt text](blob/config_basic_auth_postman.png?raw=true "Cofig SSL postman")
+    * Setting basic username/password for postman
+    <img src="blob/config_basic_auth_postman.png?raw=true" alt="Setting basic authentication" width="650"/>
   #### Swagger
-  * You can also use swagger at : https://localhost:9000/demo-service/swagger-ui/
-  ![Alt text](blob/swagger_information.png?raw=true "Cofig SSL postman")
+    * You can also use Swagger UI at : https://localhost:9000/demo-service/swagger-ui/
+    <img src="blob/swagger_information.png?raw=true" alt="Swagger UI" width="650"/>
   
 ### Database Configuration
+
 #### Allow invalid resource for localhost on chrome
-  * On chrome, go to : chrome://flags/, and enable "Allow invalid certificates for resources loaded from localhost."
-  ![Alt text](blob/allow_invalid_resource_for_localhost.png?raw=true "Allow invalid resource")
+  * On chrome, go to : "chrome://flags/", and enable: Allow invalid certificates for resources loaded from localhost.
+  <img src="blob/allow_invalid_resource_for_localhost.png?raw=true" alt="Allow invalid resource" width="650"/>
 #### Login into H2 Database
-  ![Alt text](blob/h2_login_information.png?raw=true "H2 login information")
+  * Login into H2
+  <img src="blob/h2_login_information.png?raw=true" alt="H2 login information" width="650"/>
 #### Config for H2 Databse
-  ![Alt text](blob/h2_configuration.png?raw=true "Config for H2 Databse")
+  * H2 configuration
+   <img src="blob/h2_configuration.png?raw=true" alt="Config for H2 Databse" width="650"/>
+
   
 ## Test and Verify
 
@@ -122,17 +128,17 @@ This project is a simple demo for interviewing at SOFTBRAIN.
     }
   }
   ```
-  ![Alt text](blob/api_book_searchbyauthor.png?raw=true "Search Book by Author name")
+  <img src="blob/api_book_searchbyauthor.png?raw=true" alt="Search Book by Author name" width="654"/>
   
 * Get all Book
   * Url : https://localhost:9000/demo-service/api/books
   * Method : GET
-  ![Alt text](blob/api_book_getbooks.png?raw=true "Get all Books")
+  <img src="blob/api_book_getbooks.png?raw=true" alt="Get all Books" width="654"/>
   
 * Get all Book by id
   * Url : https://localhost:9000/demo-service/api/books/1
   * Method : GET
-  ![Alt text](blob/api_book_getbyid.png?raw=true "Get Book by id")
+  <img src="blob/api_book_getbyid.png?raw=true" alt="Get Book by id" width="654"/>
   
 * Create Book
   * Url : https://localhost:9000/demo-service/api/books
@@ -154,7 +160,7 @@ This project is a simple demo for interviewing at SOFTBRAIN.
       }
   }
   ```
-  ![Alt text](blob/api_book_create.png?raw=true "Create book")
+  <img src="blob/api_book_create.png?raw=true" alt="Create book" width="654"/>
   
 * Update Book
   * Url : https://localhost:9000/demo-service/api/books
@@ -170,18 +176,18 @@ This project is a simple demo for interviewing at SOFTBRAIN.
         "name": "New Book 3",
         "description": "New Book desc 3",
         "authors": [
-        	{"id": 2},
-        	{"id": 3}
+            {"id": 2},
+            {"id": 3}
         ]
     }
   }
   ```
-  ![Alt text](blob/api_book_updatebyid.png?raw=true "Update book")
+  <img src="blob/api_book_updatebyid.png?raw=true" alt="Update book" width="654"/>
   
   * Delete Book by id
   * Url : https://localhost:9000/demo-service/api/books/1
   * Method : DELETE
-  ![Alt text](blob/api_book_deletebyid.png?raw=true "Delete by id")
+  <img src="blob/api_book_deletebyid.png?raw=true" alt="Delete by id" width="654"/>
   
 ### Author APIs
 * Search Author by email & phone number
@@ -201,17 +207,17 @@ This project is a simple demo for interviewing at SOFTBRAIN.
     }
   }
   ```
-  ![Alt text](blob/api_author_searchbyemail.png?raw=true "Search Author by email & phone number")
+  <img src="blob/api_author_searchbyemail.png?raw=true" alt="Search Author by email & phone number" width="654"/>
   
 * Get all Authors
   * Url : https://localhost:9000/demo-service/api/authors
   * Method : GET
-  ![Alt text](blob/api_author_getauthors.png?raw=true "  * Get all Author")
+  <img src="blob/api_author_getauthors.png?raw=true" alt="Get all Author" width="654"/>
   
 * Get Author by id
   * Url : https://localhost:9000/demo-service/api/books/1
   * Method : GET
-  ![Alt text](blob/api_author_getbyid.png?raw=true "Get Author by id")
+  <img src="blob/api_author_getbyid.png?raw=true" alt="Get Author by id" width="654"/>
   
 * Create Author
   * Url : https://localhost:9000/demo-service/api/authors
@@ -230,13 +236,13 @@ This project is a simple demo for interviewing at SOFTBRAIN.
     "address": "Author address 6",
     "information": "Author Information 6",
     "bookIds": [ 
-    	{"id": 2},
-    	{"id": 3}
-    	]
+        {"id": 2},
+        {"id": 3}
+        ]
     }
   }
   ```
-  ![Alt text](blob/api_author_create.png?raw=true "Create author")
+  <img src="blob/api_author_create.png?raw=true" alt="Create author" width="654"/>
   
 * Update Author
   * Url : https://localhost:9000/demo-service/api/authors/1
@@ -256,11 +262,12 @@ This project is a simple demo for interviewing at SOFTBRAIN.
     }
   }
   ```
-  ![Alt text](blob/api_author_updatebyid.png?raw=true "Update author")
+  <img src="blob/api_author_updatebyid.png?raw=true" alt="Update author" width="654"/>
   
  * Delete Author by id
     * Url : https://localhost:9000/demo-service/api/authors/1
     * Method : DELETE
-    ![Alt text](blob/api_author_deletebyid.png?raw=true "Delete Author by id")
+    <img src="blob/api_author_deletebyid.png?raw=true" alt="Delete Author by id" width="654"/>
+
   
   
